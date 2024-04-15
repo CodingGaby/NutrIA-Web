@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register | New User</title>
+</head>
+<body>
+    <div class="pageCont min-h-screen bg-gray-100 flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-auto">
+            <h2 class="text-center text-4xl font-bold">Register</h2>
+            <hr class="m-6">
+            
+            <form name="Name" id="Name">
+                <div class="grid grid-cols-2 gap-5 w-[600px]">
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Name :</label>
+                        <input class=" border rounded w-full py-2 px-3 text-gray-700" type="text"
+                            name="Name" id="Name" value="" placeholder="Enter your Name" maxlength="50">
+                 
+                    </div>
+
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
+                        <input class=" border rounded w-full py-2 px-3 text-gray-700" type="text"
+                            name="LastName" id="LastName" value="" placeholder="Enter Your Last Name" maxlength="150">
+                  
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Phone Number:</label>
+                        <input class=" border rounded w-full py-2 px-3 text-gray-700" type="tel"
+                            name="PhoneNumber" id="PhoneNumber" value="" placeholder="Enter Your Phone Number" maxlength="10" oninput="validatePhoneNumber(this)">
+                        <p id=error_creater_id></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2"> Weight(Kg):</label>
+                        <input class=" border rounded w-full py-2 px-3 text-gray-700" type="number"
+                            name="Weight" id="Weight" value="" placeholder="Enter Your Weight" min="40" max="200">                            
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Birth Date:</label>
+                        <input class=" border rounded w-full py-2 px-3 text-gray-700" type="date"
+                            name="BirthDate" id="BirthDate" value="">
+                        <p id=error_intake_year></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2"> Height (cm):</label>
+                        <input class=" border rounded w-full py-2 px-3 text-gray-700" type="number"
+                            name="Height" id="Height" value="" placeholder="Enter Your Height" min="120" max="280">                            
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2"> Email:</label>
+                        <input class=" border rounded w-full py-2 px-3 text-gray-700 focus:border-blue-500" type="email"
+                            name="Email" id="Email" value="" placeholder="Enter Your Email" maxlength="150">                            
+                    </div>
+                    
+                </div>
+                <hr>
+                <div>
+                    <a href="Disease.html" class="flex justify-center align-items w-full block bg-lime-700 hover:bg-lime-600 focus:bg-lime-600 text-white font-semibold rounded-full px-4 py-3 mt-6">
+                        Accept
+                    </a>
+                    <!--
+                        <button class="w-full block bg-lime-700 hover:bg-lime-600 focus:bg-lime-600 text-white font-semibold rounded-lg px-4 py-3 mt-6">
+                            Register
+                        </button>
+                    -->
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function validatePhoneNumber(input) {
+        // Aquí se validan que no se usen esos caracteres
+        var regex = /^\d*$/;
+
+        // Si el valor no es un número, se elimina el último carácter ingresado
+        if (!regex.test(input.value)) {
+            input.value = input.value.slice(0, -1);
+        }
+    }
+</script>
+<style>
+    body{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }    
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    .pageCont {
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/apipa-101ce.appspot.com/o/pexels-lumn-1028599.webp?alt=media&token=f3e63444-9666-4232-b161-ac45e9f9d646');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+</html>
