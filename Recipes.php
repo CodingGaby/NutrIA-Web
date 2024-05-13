@@ -5,28 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body
-        {
+        body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             background-image: url('https://firebasestorage.googleapis.com/v0/b/apipa-101ce.appspot.com/o/inback.webp?alt=media&token=b0b058f5-4e70-4123-8265-bd197eb074c0');
             background-size: cover;
         }
-        .Tittle
-        {
+        .Tittle {
             font-size: 80px;
             text-align: center;
             margin: 20px;
         }
-
         .card-container {
             margin: 2px;
             display: flex;
             justify-content: center; 
             flex-wrap: wrap; 
         }
-
-        .cards 
-        {
+        .cards {
             border-radius: 20px !important;
             margin: 20px;
         }
@@ -43,49 +38,44 @@
     </div>
     <div class="lg:flex lg:items-stretch lg:flex-no-shrink lg:flex-grow">
       <div class="lg:flex lg:items-stretch lg:justify-end ml-auto">
-        <a href="index.html" class="flex-no-grow flex-no-shrink hover:underline hover:decoration-2 relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-grey-dark">Home</a>
-        <a href="Recipes.html" class="flex-no-grow flex-no-shrink hover:underline hover:decoration-2 relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-grey-dark">Recipes</a>
+        <a href="index.php" class="flex-no-grow flex-no-shrink hover:underline hover:decoration-2 relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-grey-dark">Home</a>
+        <a href="Recipes.php" class="flex-no-grow flex-no-shrink hover:underline hover:decoration-2 relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-grey-dark">Recipes</a>
       </div>
     </div>
 </nav>
 <body class="flex flex-col justify-center items-center">
     <div class="bg-white rounded-lg w-[1200px] p-6 drop-shadow-md">
-        <h1 class="text-center text-4xl font-bold mb-2" >Recipes</h1>
+        <h1 class="text-center text-4xl font-bold mb-2">Recipes</h1>
         <hr class="py-6">
         <div class="card-container">
             <div class="cards">
-                <div class="group overflow-hidden relative shadow-lg max-w-xs  rounded-lg">
-                    <a href="#" class="absolute z-10 top-0 bottom-0 left-0 right-0"><a />
-                        <img
-                            class="block group-hover:opacity-40 transition-opacity duration-700"
-                            src="https://www.cookingclassy.com/wp-content/uploads/2017/05/strawberry-spinach-salad-11-500x500.jpg"
-                            />
-                        <div
-                            class="absolute bg-black flex items-center group-hover:-top-0 group-hover:opacity-100 duration-700 top-full right-0 w-full opacity-0 h-1/2 transition-all">
-                            <div class=""
-                                style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/steam/apps/230410/ss_2d79448091149a8cc790b62e7422615a011d015a.600x338.jpg?t=1637183731&quot;);">
+                <div class="group overflow-hidden relative shadow-lg max-w-xs rounded-lg">
+                    <a href="#" class="absolute z-10 top-0 bottom-0 left-0 right-0"></a>
+                        <img class="block group-hover:opacity-40 transition-opacity duration-700" src="https://www.cookingclassy.com/wp-content/uploads/2017/05/strawberry-spinach-salad-11-500x500.jpg"/>
+                        <div class="absolute bg-black flex items-center group-hover:-top-0 group-hover:opacity-100 duration-700 top-full right-0 w-full opacity-0 h-1/2 transition-all">
+                            <div class="" style="background-image: url(&quot;https://cdn.cloudflare.steamstatic.com/steam/apps/230410/ss_2d79448091149a8cc790b62e7422615a011d015a.600x338.jpg?t=1637183731&quot;);">
                                 <img src="https://sunkissedkitchen.com/wp-content/uploads/2022/05/Strawberry-Spinach-Salad-2.jpg" >
                             </div>
                         </div>
-                        <div class="absolute  bg-gradient-to-br duration-700 from-green-800 to-blue-800 text-white block left-0 right-0 top-full text-base h-1/2 w-full opacity-50 
-                        transition-all group-hover:top-1/2 group-hover:opacity-100">
+                        <div class="absolute  bg-gradient-to-br duration-700 from-green-800 to-blue-800 text-white block left-0 right-0 top-full text-base h-1/2 w-full opacity-50 transition-all group-hover:top-1/2 group-hover:opacity-100">
                             <div class="py-4 text-xs px-7">
                                 <div class="text-xl font-bold">Spinach and Strawberry Salad</div>
                                     <div class="overflow-ellipsis overflow-hidden whitespace-nowrap">
                                         <span class="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">Score:</span>
                                         <span class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                                                    <a href="https://store.steampowered.com/developer/DigitalExtremes?snr=1_4_600__629">🌟🌟🌟🌟🌟</a>												</span>
+                                            <a href="https://store.steampowered.com/developer/DigitalExtremes?snr=1_4_600__629">🌟🌟🌟🌟🌟</a>
+                                        </span>
                                     </div>
                                     <div class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                        <span class="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for:</span>
+                                        <span class=" text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for: Anemy</span>
                                         <span class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                                                        <a href="https://store.steampowered.com/publisher/DigitalExtremes?snr=1_4_600__629"> Anemy </a>												</span>
+                                            <!--<a href="Recipes/SpinachAndStrawberrySalad.pdf"> Anemy </a>-->
+                                            <a href="Recipes/SpinachAndStrawberrySalad.pdf" class="mt-4 px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800" download>Download Recipe</a>
+                                        </span>
                                     </div>
                             </div>
-                            <div class="absolute left-0  pl-7 pt-1">
-                                <button href="https://store.steampowered.com/app/230410/Warframe/" class="px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800">
-                                    Download Recipe
-                                </button>
+                            <div class="absolute left-0 pl-7 pt-1">
+                                <a href="Recipes/SpinachAndStrawberrySalad.pdf" class="px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800" download>Download Recipe</a>
                             </div>
                         </div>
                 </div>
@@ -117,15 +107,13 @@
                                                                     <a href="https://store.steampowered.com/developer/DigitalExtremes?snr=1_4_600__629">🌟🌟🌟🌟</a>												</span>
                                     </div>
                                     <div class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                        <span class="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for:</span>
+                                        <span class=" text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for: Cardiovascular health</span>
                                         <span class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                                                        <a href="https://store.steampowered.com/publisher/DigitalExtremes?snr=1_4_600__629"> Cardiovascular health </a>												</span>
+                                        <a href="Recipes/BakedSalmonWithAsparagus.pdf" class="px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800" download>Download Recipe</a>										</span>
                                     </div>
                             </div>
-                            <div class="absolute left-0  pl-7 pt-1">
-                                <button href="https://store.steampowered.com/app/230410/Warframe/" class="px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800">
-                                    Download Recipe
-                                </button>
+                            <div class="absolute left-0 pl-7 pt-1">
+                                <a href="Recipes/BakedSalmonWithAsparagus.pdf" class="mt-4 px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800" download>Download Recipe</a>
                             </div>
                         </div>
                 </div>
@@ -157,16 +145,11 @@
                                                                     <a href="https://store.steampowered.com/developer/DigitalExtremes?snr=1_4_600__629">🌟🌟🌟</a>												</span>
                                     </div>
                                     <div class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                        <span class="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for:</span>
+                                        <span class=" text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for: Inflamation</span>
                                         <span class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                                                        <a href="https://store.steampowered.com/publisher/DigitalExtremes?snr=1_4_600__629"> Inflammation </a>												</span>
+                                        <a href="Recipes/VegetarianLentilCurry.pdf" class="mt-4 px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800" download>Download Recipe</a>										</span>
                                     </div>
-                            </div>
-                            <div class="absolute left-0  pl-7 pt-1">
-                                <button href="https://store.steampowered.com/app/230410/Warframe/" class="px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800">
-                                    Download Recipe
-                                </button>
-                            </div>
+                                    </div>
                         </div>
                 </div>
             </div>
@@ -190,22 +173,17 @@
                         <div class="absolute  bg-gradient-to-br duration-700 from-green-800 to-blue-800 text-white block left-0 right-0 top-full text-base h-1/2 w-full opacity-50 
                 transition-all group-hover:top-1/2 group-hover:opacity-100">
                             <div class="py-4 text-xs px-7">
-                                <div class="text-xl font-bold">Detox Green Smoothie</div>
+                                <div class="text-xl font-bold">Green Detox Smoothie</div>
                                     <div class="overflow-ellipsis overflow-hidden whitespace-nowrap">
                                         <span class="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">Score:</span>
                                         <span class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
                                                                     <a href="https://store.steampowered.com/developer/DigitalExtremes?snr=1_4_600__629">🌟🌟🌟🌟🌟</a>												</span>
                                     </div>
                                     <div class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                        <span class="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for:</span>
+                                        <span class=" text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for: Digestive Health</span>
                                         <span class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                                                        <a href="https://store.steampowered.com/publisher/DigitalExtremes?snr=1_4_600__629"> Digestive health </a>												</span>
+                                        <a href="Recipes/GreenDetoxSmoothie.pdf" class="mt-4 px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800" download>Download Recipe</a>								</span>
                                     </div>
-                            </div>
-                            <div class="absolute left-0  pl-7 pt-1">
-                                <button href="https://store.steampowered.com/app/230410/Warframe/" class="px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800">
-                                    Download Recipe
-                                </button>
                             </div>
                         </div>
                 </div>
@@ -237,20 +215,15 @@
                                                                     <a href="https://store.steampowered.com/developer/DigitalExtremes?snr=1_4_600__629">🌟🌟🌟🌟🌟</a>												</span>
                                     </div>
                                     <div class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                        <span class="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for:</span>
+                                        <span class=" text-gray-400 whitespace-nowrap text-xs md:text-sm">Good for: Arthritis</span>
                                         <span class="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                                                                        <a href="https://store.steampowered.com/publisher/DigitalExtremes?snr=1_4_600__629"> Arthritis </a>												</span>
+                                        <a href="Recipes/TurmericAndGingerTea.pdf" class="mt-4 px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800" download>Download Recipe</a>												</span>
                                     </div>
-                            </div>
-                            <div class="absolute left-0  pl-7 pt-1">
-                                <button href="https://store.steampowered.com/app/230410/Warframe/" class="px-4 text-base block text-white-300 rounded-sm border-2 border-opacity-20 bg-gradient-to-b duration-700 from-green-400 to-green-800">
-                                    Download Recipe
-                                </button>
                             </div>
                         </div>
                 </div>
             </div>
         </div> 
-    </div>
+    </div>   
 </body>
 </html>

@@ -27,29 +27,49 @@
             <form class="mt-6" action="#" method="POST">
               <div>
               <label class="block text-gray-700">Email Address</label>
-                <input type="email" name="" id="" placeholder="Enter Email Address" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required>
+                <input type="email" name="Email" id="" placeholder="Enter Email Address" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required>
               </div>
       
               <div class="mt-4">
                 <label class="block text-gray-700">Password</label>
-                <input type="password" name="" id="" placeholder="Enter Password" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
+                <input type="password" name="Password" id="" placeholder="Enter Password" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
                       focus:bg-white focus:outline-none" required>
               </div>
       
               <div class="text-right mt-2">
                 <a href="#" class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">Forgot Password?</a>
               </div>
-                <a href="Recipes.html" class="flex justify-center align-items my-6 w-full block bg-lime-700 hover:bg-lime-600 focus:bg-lime-600 text-white font-semibold rounded-full px-4 py-3 my-6">
+              <!--
+                <a href="Recipes.php" class="flex justify-center align-items my-6 w-full block bg-lime-700 hover:bg-lime-600 focus:bg-lime-600 text-white font-semibold rounded-full px-4 py-3 my-6">
                   Log In
                 </a>
-                <!--
+                -->
                 <button type="submit" class="w-full block bg-lime-700 hover:bg-lime-600 focus:bg-lime-600 text-white font-semibold rounded-full px-4 py-3 mt-6">
                     Log In
                 </button>
-                -->
+                
             </form>
+            <?php
+              if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $mail = $_POST['Email'];
+                $passw = $_POST['Password'];
+
+                $link = mysqli_connect("localhost", "root", "", "nutriia") or die("Error al conectar");
+
+                $query = "SELECT email, password FROM users WHERE email = '$mail' AND password = '$passw'";
+
+                $result = mysqli_query($link, $query);
+
+                if (mysqli_num_rows($result) > 0) {
+                  header("Location: Recipes.php");
+                  exit();
+                } else {
+                  //echo "Contra mal";
+                }
+              }
+            ?>
             <hr class="mt-6"/>
-            <p class="mt-8">Need an account? <a href="register.html" class="text-lime-500 hover:text-lime-700 font-semibold">Create an account</a></p>
+            <p class="mt-8">Need an account? <a href="register.php" class="text-lime-500 hover:text-lime-700 font-semibold">Create an account</a></p>
           </div>
         </div>
       </section>

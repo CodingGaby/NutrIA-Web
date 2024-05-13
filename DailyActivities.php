@@ -37,8 +37,8 @@
     </div>
     <div class="lg:flex lg:items-stretch lg:flex-no-shrink lg:flex-grow">
       <div class="lg:flex lg:items-stretch lg:justify-end ml-auto">
-        <a href="index.html" class="flex-no-grow flex-no-shrink hover:underline hover:decoration-2 relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-grey-dark">Home</a>
-        <a href="Recipes.html" class="flex-no-grow flex-no-shrink hover:underline hover:decoration-2 relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-grey-dark">Recipes</a>
+        <a href="index.php" class="flex-no-grow flex-no-shrink hover:underline hover:decoration-2 relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-grey-dark">Home</a>
+        <a href="Recipes.php" class="flex-no-grow flex-no-shrink hover:underline hover:decoration-2 relative py-2 px-4 leading-normal no-underline flex items-center hover:bg-grey-dark">Recipes</a>
       </div>
     </div>
 </nav>
@@ -98,7 +98,7 @@
                 </div>
             </fieldset>
             <hr class="mb-6">
-            <a href="Pantry.html" class="flex justify-center align-items w-full block bg-lime-700 hover:bg-lime-600 focus:bg-lime-600 text-white font-semibold rounded-full px-4 py-3">Accept</a>
+            <a href="Pantry.php" class="flex justify-center align-items w-full block bg-lime-700 hover:bg-lime-600 focus:bg-lime-600 text-white font-semibold rounded-full px-4 py-3">Accept</a>
             <!--
                 <button class="w-full block bg-green-700 hover:bg-green-600 focus:bg-lime-600 text-white font-semibold rounded-lg px-4 py-3 mt|-6">
                     Accept
